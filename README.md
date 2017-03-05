@@ -23,9 +23,9 @@ public class App
   public App()
   {
     //wire the interface and implementation
-    XamIoc.Bind<IMessenger, Messenger>();
+    XamIoc.Core.Bind<IMessenger, Messenger>();
     //resolve the interface and passing a parameter
-    var msg = XamIoc.Resolve<IMessenger>("Love you");
+    var msg = XamIoc.Core.Resolve<IMessenger>("Love you");
     msg.Send();
   }
 }
