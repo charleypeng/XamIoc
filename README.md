@@ -1,6 +1,6 @@
 # XamIoc
 a very tiny ioc for the xamarin apps and .net standard apps
-##Usage
+## Usage
 ```C#
 public interface IMessenger
 {
